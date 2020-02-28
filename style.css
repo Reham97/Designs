@@ -151,3 +151,188 @@ input[type="radio"]:checked + .app::after
   
     transform: translateY(2px);
   }
+  /*******************************************/
+
+
+#section3
+{
+    background: #3b5998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+#section3 h3
+{
+    font-size: 400%;
+    color: #e8eff5;
+    
+}
+.clock
+{
+    background: #e8eff5;
+    width:300px;
+    height:300px;
+    margin: 8% auto 0;
+    border-radius: 50%;
+    border:14px solid #808000;
+    position: relative;
+}
+.dot
+{
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background-color: #808000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+}
+.hour-hand
+{
+    position: absolute;
+    z-index: 5;
+    width:4px;
+    height:65px;
+    background:yellow;
+    top:79px;
+    transform-origin: 50% 72px;
+    left:50%;
+    margin-left: -2px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+   
+}
+.minute-hand
+{
+    position: absolute;
+    z-index: 6;
+    width:4px;
+    height:100px;
+    background-color:red;
+    
+    top:46px;
+    left:50%;
+    margin-left: -2px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 105px;
+}
+
+.second-hand
+{
+    position: absolute;
+    z-index: 7;
+    width:2px; 
+    height:120px;
+    background-color:rgb(37, 29, 145);
+
+    top:26px;
+    left:50%;
+  
+
+    margin-left: -1px;
+   
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform-origin: 50% 125px;
+}
+#section3 span
+{
+display: inline-block;
+position: absolute;
+color: #222;
+font-size: 22px;
+font-weight: 700;
+z-index: 4;
+}
+.h12
+{
+    top:30px;
+    left:50%;
+    margin-left: -9px; 
+}
+.h3
+{
+    top:140px;
+    right: 30px;
+}
+.h6
+{
+    bottom: 30px;
+    left:50%;
+    margin-left: -5px;
+}
+.h9
+{
+    left:32px;
+    top:140px;
+}
+.diallines
+{
+    position: absolute;
+    z-index: 2;
+    width:2px;
+    height:15px;
+    background:#666;
+    left:50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n)
+{
+    position: absolute;
+    z-index: 2;
+    width:4px;
+    height:25px;
+    background:#666;
+    left:50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+}
+.date{
+    z-index: 2;
+    position: absolute;
+    width:120px;
+    height:20px;
+    border-radius: 7px;
+    background-color: #888;
+    text-align: center;
+    /*line-height: 20px;*/
+    color: #fff;
+    font-size: 11px;
+    top: 80px;
+    transform-origin: 50% 150px;
+    margin-left: -60px;
+    left:50%;
+    font-weight:700;
+    z-index: 3;
+    letter-spacing: 3px;
+    line-height: 20px;;
+}
+.day{
+    z-index: 3;
+    position: absolute;
+    width:120px;
+    height:20px;
+    border-radius: 7px;
+    background-color: #888;
+    text-align: center;
+    /*line-height: 20px;*/
+    color: #fff;
+    font-size: 11px;
+    top: 200px;
+    transform-origin: 50% 150px;
+    margin-left: -60px;
+    left:50%;
+    font-weight:700;
+    z-index: 3;
+    letter-spacing: 3px;
+}
